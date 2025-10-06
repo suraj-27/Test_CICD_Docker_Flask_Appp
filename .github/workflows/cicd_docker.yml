@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: action/checkout@v4
+    - uses: actions/checkout@v4
     - name: Build The Docker Image
       run: docker build . --file DockerFile --tag workflow-test:$(date +%s)
 
